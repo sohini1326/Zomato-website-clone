@@ -1,0 +1,727 @@
+a{
+	text-decoration: none;
+}
+.main{
+
+	height: 100vh;
+	width: 100%;
+	background-image: url('../img/bg.jpg');
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+.intro{
+	width: 100%;
+	height: 384px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.intro-left, .intro-right{
+	flex-basis: 50%;
+	height: 100%;
+}
+.intro-left{
+	margin-top: 100px;
+}
+#intro-text{
+	padding: 72px;
+	color: white;
+	position: relative;
+}
+#intro-text h5{
+	float: right;
+	font-size: 1.6em;
+	font-family: 'Caveat', cursive;
+}
+#intro-text h2{
+	font-size: 3rem;
+	font-family: 'Dancing Script', cursive;
+}
+#strt-line{
+	width: 58px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 55px;
+    right: 277px;
+}
+#img-slider{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+#img-box{
+	width: 75%;
+    height: 78%;
+    border-radius: 20px;
+    background-image: url('../img/s1.jpg');
+	background-position: center;
+	background-size: cover;
+	animation: 20s sliding infinite;
+}
+
+@keyframes sliding{
+	0%{
+		background-image: url('../img/s1.jpg');
+	}
+	20%{
+		background-image: url('../img/s2.jpg');
+	}
+	40%{
+		background-image: url('../img/s3.jpg');
+	}
+	60%{
+		background-image: url('../img/s4.jpg');
+	}
+	80%{
+		background-image: url('../img/s5.jpg');
+	}
+}
+
+
+/*MODALS*/
+.bgclr{
+	background-color: rgba(255, 51, 51,0.8);
+}
+.inpt-frmt{
+	width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.icon-design{
+	font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* RESTAIRANT SECTION*/
+
+/*Heading*/
+.restaura-heading{
+	display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+/*Middle section*/
+.restaura-decor{
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	margin-bottom: 50px;
+	position: relative;
+}
+.restaura-decor-left,.restaura-decor-right{
+	flex-basis: 50%;
+}
+.restaura-decor-right h3{
+	font-family: 'Satisfy', cursive;
+	font-size: 4.6rem;
+	position: absolute;
+	right: 0px;
+	top: 125px;
+}
+.restaura-decor-right h3 span{
+	margin-left: 85px;
+}
+.restaura-decor-left{
+	display: flex;
+	flex-direction: column;
+	box-shadow: 10px 10px 15px 3px 	rgb(220,220,220);
+}
+.restaura-decor-left img{
+	border-radius: 50%;
+	height: 226px;
+    width: 318px;
+	object-fit: cover;
+}
+#im2{
+    margin-left: 210px;
+    margin-bottom: 20px;
+}
+#im1{
+	margin-left: 18px;
+    margin-top: 18px;
+}
+
+/*Reastaurant list*/
+
+.restaura-row, .cuisine-row{
+	width: 100%;
+	display: flex;
+}
+.restaura_col, .cuisine-col{
+	flex-basis: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 5px;
+	padding: 8px;
+}
+.restaura_col img, .cuisine-col img{
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	margin-bottom: 8px;
+	border-radius: 20px;
+}
+.restaura_col h3,.cuisine-col h3{
+	font-family: 'PT Sans', sans-serif;
+}
+
+/*Arrangement of menu in each restrau in restaurant.php*/
+
+.restrau-page{
+	padding-top: 55px;
+	width: 80%;
+	margin: auto;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.restrau-page-left,.restrau-page-right{
+	flex-basis: 50%;
+}
+.restrau-page-left img{
+	width: 90%;
+    height: 250px;
+    border-radius: 78px;
+    object-fit: cover;
+}
+.restrau-page-right{
+	display: flex;
+	flex-direction: column;
+}
+.restrau-page-right h3{
+	
+}
+.restrau-page-right font-family: 'Pacifico', cursive;h5{
+	background-color: green;
+	padding: 2px;
+	color: white;
+}
+
+/*List of foods of each restrau*/
+.menu-list{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.food{
+	width: 100%;
+	display: flex;	
+	margin-bottom: 40px;
+}
+.food-img,.food-desc{
+	flex-basis: 30%;
+}
+.food-price,
+.food-add-to-cart{
+	flex-basis: 20%;
+	text-align: center;
+}
+.food-img{
+	text-align: center;
+}
+.food-img img{
+	width: 60%;
+	height: 112px;
+	object-fit: cover;
+}
+
+/*REVIEW SECTION*/
+
+.review-section{
+	width: 100%;
+	margin-top: 80px;
+}
+
+/*Review Modals*/
+.rev-bgclr{
+	background: #ffe259;  
+	background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  
+	background: linear-gradient(to right, #ffa751, #ffe259); 
+}
+.rev-btn{
+	background: #799F0C; 
+}
+.rev-inpt-frmt{
+	width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: 40px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.rev-icon-design{
+	font-size: 20px;
+    margin-right: 20px;
+}
+.rev-label{
+	margin-bottom: 25px;
+	font-style: italic;
+	font-weight: bold;
+}
+#star-rating{
+	width: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/*HOW REVIEW WOULD GET DISPLAYED*/
+
+.review-row{
+	display: flex;
+	flex-direction: column;
+}
+.indiv-review{
+	display: flex;
+	width: 60%;
+    margin: 0px auto;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 0px grey;
+    margin-bottom: 50px;
+}
+.rev-date-user{
+	flex-basis: 40%;
+}
+.rev-details{
+	flex-basis: 60%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+}
+
+/*CUISINES*/
+
+.cuisines{
+	width: 100%;
+	height: 90vh;
+	background-image:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url('../img/bg1.jpg');
+	background-position: center;
+	background-size: cover;
+	margin-top: 80px;
+}
+.cuisine-row{
+	margin-top: 35px;
+	/*box-shadow: 10px 10px 15px 3px white;*/
+}
+.cuisine-intro{
+	width: 100%;
+	display: flex;
+	margin: 60px 0px;
+}
+.cuisine-intro i{
+	color: white;
+    font-size: 50px;
+    margin: 0px 8px;
+}
+.cuisine-col{
+	box-shadow: 4px 4px 17px #A9A9A9;
+	margin: 5px 11px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+/*SELECTING RESTAURANTS BY CUISINES*/
+
+.list-of-restaurants{
+	margin-top: 75px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.retsurant-details{
+	width: 100%;
+	display: flex;
+	margin-bottom: 50px;
+}
+.pic,.info{
+	flex-basis: 50%;
+}
+.pic{
+	text-align: center;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.pic img{
+	width: 50%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.catchy-line{
+	margin-top: 85px;
+	text-align: right;
+	margin-bottom: 15px;
+}
+.catchy-line h4{
+	font-family: 'Caveat', cursive;
+    font-size: 2.1rem;
+    line-height: 3rem;
+}
+.info h3{
+	font-family: 'Acme', sans-serif;
+	color: #000080;
+}
+.info h2{
+	font-family: 'Courgette', cursive;
+}
+.info h4{
+	font-family: 'RocknRoll One', sans-serif;
+}
+
+
+/*CART PAGE DISPLAYING THE PRODUCTS IN THE CART*/
+
+.cart-page{
+	display: flex;
+}
+.cart-advertise-display{
+	flex-basis: 34%;
+	background-color: rgb(255, 230, 230);
+	height: 100vh;
+    box-shadow: 10px 0px 10px rgb(102, 102, 102);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-advertise-display img{
+	margin-top: 15px;
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 75px;
+}
+.cart-advertise-display h4{
+	font-family: 'Cookie', cursive;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cart-product-display{
+	flex-basis: 60%;
+}
+.quantity-div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.quantity-div button{
+	border-radius: 50%;
+	text-align: center;
+}
+.dishes{
+	font-family: 'Cookie', cursive;
+	font-size: 2rem;
+}
+.total-line{
+	background-color: #282828;
+    height: 5px;
+    width: 40%;
+    position: absolute;
+    right: 60px;
+    margin-top: 40px;
+}
+.cart-total{
+	float: right;
+    margin-top: 50px;
+    position: absolute;
+    right: 60px;
+    margin-bottom: 40px;
+}
+.cart-total h3, .apply-coupon h3{
+	font-family: 'Cookie', cursive;
+	font-size: 3.4rem;
+}
+#checkout_btn{
+	position: absolute;
+    right: 0px;
+    margin-bottom: 35px;
+}
+.checkout-btn-disable{
+	cursor: not-allowed;
+    pointer-events: none;
+}
+
+/*CHECKOUT PAGE*/
+
+/* COUPONS*/
+
+.checkout-page{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+}
+.checkout-page-left,.checkout-page-right{
+	flex-basis: 50%;
+}
+.checkout-page-left{
+	background-color: #F5F5F5;
+	box-shadow: 5px 0px 24px 0px grey;
+}
+.apply-coupon, .select-coupon{
+	width: 75%;
+	height: 70%;
+	margin:auto;
+	text-align: center;
+	margin-top: 80px;
+}
+#discount-form{
+	margin-top: 40px;
+}
+#coupon{
+	margin-left: 20px;
+    width: 117px;
+    outline: none;
+    padding: 5px;
+    background-color: #FFCCFF;
+    border: none;
+    border-radius: 4px;
+}
+#discount-btn{
+	padding: 3px 6px;
+    width: 90px;
+    outline: none;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: 1px dashed black;
+    background-color: 	#F8F8F8;
+    cursor: pointer;
+}
+#discount-btn:hover{
+	transform: scaleX(1.5);
+}
+#applied_disc{
+	margin-top: 25px;
+    font-family: 'Cookie', cursive;
+    font-size: 3.4rem;
+    color: brown;
+}
+.select-coupon{
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.coupon-details{
+	display: flex;
+}
+.coupon-details .details{
+	flex-basis: 70%;
+}
+.coupon-details h4{
+	flex-basis: 30%;
+	font-family: 'Anton', sans-serif;
+}
+.coupon-details h3{
+	font-family: "Lobster", cursive;
+}
+.coupon-details h2{
+	font-family: "Cookie", cursive;
+}
+#min-cart-val{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* ADDRESS */
+
+#new_address{
+	margin-top: 30px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.address-page{
+	display: flex;
+}
+.address-inputs{
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.address-inputs label{
+	margin: 10px 0px;
+}
+.address-inputs input{
+	padding: 12px;
+	border-radius: 15px;
+	outline: none;
+}
+.address-selection{
+	position: relative;
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 70px;
+}
+.individual-addresses input{
+	margin-right: 20px;
+	cursor: pointer;
+}
+.indiv-add{
+	font-family: 'Caveat', cursive;
+	font-size: 1.3rem;
+}
+#select-proceed{
+	position: absolute;
+	bottom: 0px;
+    right: -20px;
+	border-radius: 15px;
+}
+
+
+
+/*PAYMENT PAGE*/
+
+.payment-page{
+	width: 50%;
+	margin: auto;
+	height: 70%;
+	margin-top: 35px;
+	border: 1px solid rgba(255, 230, 230,0.4);
+	padding: 20px 60px;
+	border-radius: 45px;
+    background-color: rgba(255, 230, 230,0.4);
+}
+.modes input{
+	margin-right: 20px;
+	cursor: pointer;
+	/*font-family: 'Teko', sans-serif;*/
+}
+.modes hr{
+	outline: none;
+    padding: 3px;
+}
+.icon{
+	font-size: 20px;
+    margin-left: 12px;
+}
+.bold{
+	font-weight: bold;
+}
+
+/*ORDER CONFIRMATION PAGE*/
+
+.order-confirmation-page{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.order-confirmed{
+	width: 70%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 230, 230);
+	border-radius: 120px;
+}
+.order-pace-icon{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+
+/*MY ORDERS*/
+
+.individual-orders{
+	width: 80%;
+	margin: auto;
+}
+.order-row{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	padding: 20px;
+    box-shadow: 0px 0px 15px 0px grey;
+}
+.order-items{
+	display: flex;
+	justify-content: space-around;
+}
+#food-item{
+	font-family: 'Architects Daughter', cursive;
+}
+.order-details{
+	text-align: right;
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+
+/*FOOTER SECTION*/
+
+.footer-section{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 3px;
+	background-color: #F5F5F5;
+	display: flex;
+}
+.footer-section-left , .footer-section-right{
+	flex-basis: 50%;
+	text-align: center;
+}
+.footer-section-left{
+	display: flex;
+	flex-direction: column;
+	margin-left: 285px;
+    margin-top: 33px;
+}
+.address,.contact-us,.mail-us{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.address i,.contact-us i,.mail-us i, .app i{
+	font-size: 35px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.footer-section-right{
+	display: flex;
+	flex-direction: column;
+	margin-top: 33px;
+	margin-right: 75px;
+}
+.social-links{
+	width: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.social-links i{
+	font-size: 33px;
+	cursor: pointer;
+}
+.app{
+	width: 34%;
+    margin: 0px auto;
+    display: flex;
+    margin-top: 40px;
+}
